@@ -302,7 +302,8 @@
 
         /* ================= PREÇOS / PLANOS ================= */
         .pricing { padding: 100px 5%; background: var(--bg-lighter); text-align: center; }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto; }
+        /* Alterado de max-width: 1000px para 1200px para caber os 3 cards */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
         
         .plan-card {
             background: var(--bg-color);
@@ -500,7 +501,7 @@
             <li><a href="#faq">Suporte</a></li>
         </ul>
         
-        <a href="http://wa.me/5588997203790" class="btn-primary header-btn" target="_blank">
+        <a href="https://wa.me/5588997203790" class="btn-primary header-btn" target="_blank">
             <i class="fa-brands fa-whatsapp"></i> Teste Premium
         </a>
     </header>
@@ -517,8 +518,8 @@
                 <h1>Sua Casa com<br><span>Tela de Cinema!</span></h1>
                 <p>Conteúdo premium, imagem impecável e acesso instantâneo em todos os seus dispositivos.</p>
                 <div class="hero-buttons">
-                    <a href="http://wa.me/5588997203790" class="btn-primary" target="_blank"><i class="fa-brands fa-whatsapp"></i> Liberar Acesso Prime</a>
-                    <a href="http://wa.me/5588997203790" class="btn-outline" target="_blank">Falar com Especialista</a>
+                    <a href="https://wa.me/5588997203790" class="btn-primary" target="_blank"><i class="fa-brands fa-whatsapp"></i> Liberar Acesso Prime</a>
+                    <a href="https://wa.me/5588997203790" class="btn-outline" target="_blank">Falar com Especialista</a>
                 </div>
             </div>
 
@@ -635,6 +636,7 @@
         <p class="section-subtitle reveal">Sem Fidelidade. Cancele quando quiser.</p>
 
         <div class="pricing-grid">
+            <!-- PLANO BÁSICO (Mantido igual) -->
             <div class="plan-card reveal">
                 <h3>Mensal Básico</h3>
                 <p>Para quem busca economia sem perder conteúdo.</p>
@@ -648,11 +650,29 @@
                 <a href="http://wa.me/5588997203790" class="btn-outline" style="width: 100%; display:block;" target="_blank">Assinar Agora</a>
             </div>
 
-            <div class="plan-card premium reveal" style="transition-delay: 0.2s;">
+            <!-- PLANO INTERMEDIÁRIO (Agora com destaque Premium) -->
+            <div class="plan-card premium reveal" style="transition-delay: 0.1s;">
                 <div class="badge">MAIS ESCOLHIDO</div>
+                <h3>Intermediário</h3>
+                <p>O equilíbrio perfeito entre qualidade e preço.</p>
+                <div class="plan-price">R$ 35<span>,00 /mês</span></div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> <span><b>Qualidade 4K Adaptativa</b></span></li>
+                    <li><i class="fa-solid fa-check"></i> <span>+120.000 Conteúdos</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span><b>1 Tela Individual</b></span></li>
+                    <li><i class="fa-solid fa-check"></i> <span>Tecnologia Anti-Buffering</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span><b>Suporte Prioritário</b></span></li>
+                    <li><i class="fa-solid fa-check"></i> <span>Conteúdo Adulto (opcional)</span></li>
+                </ul>
+                <a href="https://wa.me/5588997203790" class="btn-primary" style="width: 100%;" target="_blank"><i class="fa-brands fa-whatsapp"></i> Assinar Agora</a>
+            </div>
+
+            <!-- PLANO TOP PREMIUM 4K (Agora com estilo normal) -->
+            <div class="plan-card reveal" style="transition-delay: 0.2s;">
                 <h3>Top Premium 4K</h3>
                 <p>A experiência absoluta para toda a família.</p>
-                <div class="plan-price" style="color: var(white);">R$ 44<span>,99 /mês</span></div>
+                <!-- Aproveitei para corrigir um pequeno bug de CSS que havia no original: style="color: var(white);" para style="color: #fff;" -->
+                <div class="plan-price" style="color: #fff;">R$ 44<span>,99 /mês</span></div>
                 <ul class="plan-features">
                     <li><i class="fa-solid fa-check"></i> <span><b>Qualidade 4K Adaptativa</b></span></li>
                     <li><i class="fa-solid fa-check"></i> <span>+120.000 Conteúdos</span></li>
@@ -661,7 +681,7 @@
                     <li><i class="fa-solid fa-check"></i> <span><b>Suporte Prioritário</b></span></li>
                     <li><i class="fa-solid fa-check"></i> <span>Conteúdo Adulto (opcional)</span></li>
                 </ul>
-                <a href="http://wa.me/5588997203790" class="btn-primary" style="width: 100%;" target="_blank"><i class="fa-brands fa-whatsapp"></i> Quero ser Premium</a>
+                <a href="https://wa.me/5588997203790" class="btn-outline" style="width: 100%; display:block;" target="_blank">Assinar Agora</a>
             </div>
         </div>
     </section>
@@ -692,7 +712,7 @@
         <p class="footer-text">© 2026 PrimeHub Streaming. Todos os direitos reservados. <br>Tecnologia a serviço do seu entretenimento.</p>
     </footer>
 
-    <a href="http://wa.me/5588997203790" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+    <a href="https://wa.me/5588997203790" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
